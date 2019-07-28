@@ -45,33 +45,31 @@
       "type": "vibration"
     },
     {
-      "name": "/actions/platformer/in/Move",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/platformer/in/Jump",
+      "name": "/actions/Tutorial/in/Teleport",
       "type": "boolean"
     },
     {
-      "name": "/actions/buggy/in/Steering",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/buggy/in/Throttle",
-      "type": "vector1"
-    },
-    {
-      "name": "/actions/buggy/in/Brake",
+      "name": "/actions/Tutorial/in/Grab",
       "type": "boolean"
     },
     {
-      "name": "/actions/buggy/in/Reset",
-      "type": "boolean"
+      "name": "/actions/Tutorial/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
     },
     {
-      "name": "/actions/mixedreality/in/ExternalCamera",
-      "type": "pose",
+      "name": "/actions/Tutorial/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/Tutorial/in/HeadsetOnHead",
+      "type": "boolean",
       "requirement": "optional"
+    },
+    {
+      "name": "/actions/Tutorial/in/Pose",
+      "type": "pose"
     }
   ],
   "action_sets": [
@@ -80,15 +78,7 @@
       "usage": "single"
     },
     {
-      "name": "/actions/platformer",
-      "usage": "single"
-    },
-    {
-      "name": "/actions/buggy",
-      "usage": "single"
-    },
-    {
-      "name": "/actions/mixedreality",
+      "name": "/actions/Tutorial",
       "usage": "single"
     }
   ],
@@ -142,7 +132,11 @@
       "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",
       "/actions/default/in/Teleport": "Teleport",
       "/actions/default/out/Haptic": "Haptic",
-      "/actions/platformer/in/Jump": "Jump"
+      "/actions/Tutorial/in/Teleport": "Teleport",
+      "/actions/Tutorial/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/Tutorial/in/SkeletonRightHand": "Skeleton (Right)",
+      "/actions/Tutorial/in/HeadsetOnHead": "Headset on head (proximity sensor)",
+      "/actions/Tutorial/in/Pose": "Pose"
     }
   ]
 }
